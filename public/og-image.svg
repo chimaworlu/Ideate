@@ -1,84 +1,144 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
   <defs>
-    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0B0F19" />
-      <stop offset="50%" stop-color="#111827" />
-      <stop offset="100%" stop-color="#1E1B4B" />
-    </linearGradient>
     <linearGradient id="logoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#4F46E5" />
       <stop offset="100%" stop-color="#7C3AED" />
     </linearGradient>
-    <linearGradient id="textGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#FFFFFF" />
-      <stop offset="100%" stop-color="#E0E7FF" />
-    </linearGradient>
   </defs>
 
-  <!-- Background -->
-  <rect width="1200" height="630" fill="url(#bg)" />
+  <!-- App Background -->
+  <rect width="1200" height="630" fill="#F8FAFC" />
 
-  <!-- Subtle ambient glow rings -->
-  <circle cx="1050" cy="120" r="280" fill="#4F46E5" opacity="0.12" filter="blur(60px)" />
-  <circle cx="150" cy="520" r="220" fill="#7C3AED" opacity="0.10" filter="blur(50px)" />
+  <!-- Top Navigation Bar -->
+  <rect width="1200" height="64" fill="#FFFFFF" />
+  <line x1="0" y1="64" x2="1200" y2="64" stroke="#E2E8F0" stroke-width="1" />
 
-  <!-- Outer frame border -->
-  <rect x="30" y="30" width="1140" height="570" rx="24" fill="none" stroke="#334155" stroke-width="1.5" stroke-opacity="0.6" />
-
-  <!-- App Badge & Header -->
-  <g transform="translate(100, 100)">
-    <rect width="64" height="64" rx="18" fill="url(#logoGrad)" />
-    <!-- Sparkles motif -->
-    <path d="M32 15L34.5 27.5L47 30L34.5 32.5L32 45L29.5 32.5L17 30L29.5 27.5L32 15Z" fill="#FFFFFF" />
-    <path d="M46 13L47.2 18.8L53 20L47.2 21.2L46 27L44.8 21.2L39 20L44.8 18.8L46 13Z" fill="#E0E7FF" opacity="0.9" />
-
-    <text x="84" y="44" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="34" font-weight="800" fill="#FFFFFF" letter-spacing="-0.5">Ideate</text>
-    <rect x="206" y="22" width="220" height="28" rx="14" fill="#1E293B" stroke="#334155" stroke-width="1" />
-    <circle cx="222" cy="36" r="4" fill="#6366F1" />
-    <text x="234" y="40" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="12" font-weight="600" fill="#CBD5E1" letter-spacing="0.5">PROBLEM-SOLVING EXPERIENCE</text>
+  <!-- Logo and Brand -->
+  <g transform="translate(100, 14)">
+    <rect width="36" height="36" rx="10" fill="url(#logoGrad)" />
+    <!-- Sparkles inside logo -->
+    <path d="M18 8L19.4 15.6L27 17L19.4 18.4L18 26L16.6 18.4L9 17L16.6 15.6L18 8Z" fill="#FFFFFF" />
+    <path d="M26 6L26.6 9.4L30 10L26.6 10.6L26 14L25.4 10.6L22 10L25.4 9.4L26 6Z" fill="#E0E7FF" opacity="0.9" />
+    <text x="48" y="25" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="20" font-weight="800" fill="#0F172A" letter-spacing="-0.5">Ideate</text>
   </g>
 
-  <!-- Main Headline -->
-  <g transform="translate(100, 240)">
-    <text font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="56" font-weight="900" fill="url(#textGrad)" letter-spacing="-1.5">
-      Turn everyday problems into
-    </text>
-    <text y="70" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="56" font-weight="900" fill="#A5B4FC" letter-spacing="-1.5">
-      possible technology product ideas.
-    </text>
-    <text y="130" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="20" font-weight="400" fill="#94A3B8">
-      An interactive 4-stage workshop experience for technology events and creative thinkers.
-    </text>
+  <!-- Header Right Progress -->
+  <g transform="translate(860, 20)">
+    <text x="70" y="16" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="500" fill="#64748B">Problem-solving experience</text>
+    <rect x="235" y="0" width="95" h="26" rx="13" fill="#F1F5F9" stroke="#E2E8F0" stroke-width="1" />
+    <circle cx="248" cy="13" r="3.5" fill="#4F46E5" />
+    <text x="257" y="17" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="700" fill="#334155">Stage 1 / 4</text>
   </g>
 
-  <!-- 4 Stages Pills -->
-  <g transform="translate(100, 470)">
-    <!-- Stage 1 -->
-    <g transform="translate(0, 0)">
-      <rect width="230" height="52" rx="14" fill="#1E293B" stroke="#334155" stroke-width="1" />
-      <text x="18" y="24" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="700" fill="#818CF8">STAGE 1</text>
-      <text x="18" y="41" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="14" font-weight="600" fill="#F1F5F9">Choose a problem</text>
-    </g>
+  <!-- Main Content Area -->
+  <!-- Stage Indicator Badge -->
+  <g transform="translate(100, 92)">
+    <rect width="195" height="26" rx="13" fill="#EEF2FF" stroke="#E0E7FF" stroke-width="1" />
+    <text x="14" y="17" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="10.5" font-weight="700" fill="#4338CA" letter-spacing="0.5">STAGE 1 OF 4 • CHOOSE A PROBLEM</text>
+  </g>
 
-    <!-- Stage 2 -->
-    <g transform="translate(250, 0)">
-      <rect width="230" height="52" rx="14" fill="#1E293B" stroke="#334155" stroke-width="1" />
-      <text x="18" y="24" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="700" fill="#818CF8">STAGE 2</text>
-      <text x="18" y="41" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="14" font-weight="600" fill="#F1F5F9">Understand context</text>
-    </g>
+  <!-- Main Headline & Subtitle -->
+  <text x="100" y="152" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="30" font-weight="800" fill="#0F172A" letter-spacing="-0.8">
+    What problem would you like to solve?
+  </text>
+  <text x="100" y="178" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="400" fill="#475569">
+    Choose a problem you've experienced or describe one of your own. Every great idea starts somewhere.
+  </text>
 
-    <!-- Stage 3 -->
-    <g transform="translate(500, 0)">
-      <rect width="230" height="52" rx="14" fill="#1E293B" stroke="#334155" stroke-width="1" />
-      <text x="18" y="24" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="700" fill="#818CF8">STAGE 3</text>
-      <text x="18" y="41" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="14" font-weight="600" fill="#F1F5F9">Explore a solution</text>
-    </g>
+  <!-- Suggested Problems Heading -->
+  <text x="100" y="218" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="700" fill="#64748B" letter-spacing="0.6">
+    SUGGESTED PROBLEMS
+  </text>
+  <text x="1065" y="218" text-anchor="end" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="400" fill="#94A3B8">
+    Select one
+  </text>
 
-    <!-- Stage 4 -->
-    <g transform="translate(750, 0)">
-      <rect width="230" height="52" rx="14" fill="#312E81" stroke="#4F46E5" stroke-width="1" />
-      <text x="18" y="24" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="700" fill="#A5B4FC">STAGE 4</text>
-      <text x="18" y="41" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="14" font-weight="600" fill="#FFFFFF">Your product concept</text>
-    </g>
+  <!-- Problem Cards Grid (Row 1) -->
+  <!-- Card 1: Selected (Finding internship opportunities) -->
+  <g transform="translate(100, 230)">
+    <rect width="310" height="114" rx="16" fill="#EEF2FF" stroke="#4F46E5" stroke-width="1.75" />
+    <!-- Icon Box -->
+    <rect x="16" y="16" width="38" height="38" rx="10" fill="#4F46E5" />
+    <!-- Briefcase Icon -->
+    <path d="M30 26V23C30 22.4 29.6 22 29 22H21C20.4 22 20 22.4 20 23V26M18 26H32C32.6 26 33 26.4 33 27V36C33 36.6 32.6 37 32 37H18C17.4 37 17 36.6 17 36V27C17 26.4 17.4 26 18 26Z" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" fill="none" />
+    <!-- Selection Check Indicator -->
+    <circle cx="288" cy="24" r="9" fill="#4F46E5" />
+    <path d="M284 24L287 27L293 21" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+    <!-- Tag & Title -->
+    <rect x="16" y="64" width="98" height="18" rx="4" fill="#E0E7FF" />
+    <text x="22" y="76" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9.5" font-weight="700" fill="#4338CA" letter-spacing="0.3">CAREER &amp; GROWTH</text>
+    <text x="16" y="98" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13.5" font-weight="700" fill="#1E1B4B">Finding internship opportunities</text>
+  </g>
+
+  <!-- Card 2: Managing school assignments -->
+  <g transform="translate(445, 230)">
+    <rect width="310" height="114" rx="16" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1" />
+    <rect x="16" y="16" width="38" height="38" rx="10" fill="#F1F5F9" />
+    <!-- Clipboard Icon -->
+    <path d="M22 22H28M22 26H28M24 19V21M26 19V21M20 21H30C30.6 21 31 21.4 31 22V35C31 35.6 30.6 36 30 36H20C19.4 36 19 35.6 19 35V22C19 21.4 19.4 21 20 21Z" stroke="#475569" stroke-width="1.5" stroke-linecap="round" fill="none" />
+    <circle cx="288" cy="24" r="8" fill="none" stroke="#CBD5E1" stroke-width="1" />
+    <rect x="16" y="64" width="80" height="18" rx="4" fill="#F1F5F9" />
+    <text x="22" y="76" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9.5" font-weight="600" fill="#64748B" letter-spacing="0.3">PRODUCTIVITY</text>
+    <text x="16" y="98" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13.5" font-weight="600" fill="#0F172A">Managing school assignments</text>
+  </g>
+
+  <!-- Card 3: Finding affordable accommodation -->
+  <g transform="translate(790, 230)">
+    <rect width="310" height="114" rx="16" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1" />
+    <rect x="16" y="16" width="38" height="38" rx="10" fill="#F1F5F9" />
+    <!-- Home Icon -->
+    <path d="M19 27L25 21L31 27M21 25.5V35H29V25.5" stroke="#475569" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+    <circle cx="288" cy="24" r="8" fill="none" stroke="#CBD5E1" stroke-width="1" />
+    <rect x="16" y="64" width="94" height="18" rx="4" fill="#F1F5F9" />
+    <text x="22" y="76" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9.5" font-weight="600" fill="#64748B" letter-spacing="0.3">LIVING &amp; HOUSING</text>
+    <text x="16" y="98" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13.5" font-weight="600" fill="#0F172A">Finding affordable accommodation</text>
+  </g>
+
+  <!-- Problem Cards Grid (Row 2) -->
+  <!-- Card 4: Accessing quality learning materials -->
+  <g transform="translate(100, 356)">
+    <rect width="310" height="114" rx="16" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1" />
+    <rect x="16" y="16" width="38" height="38" rx="10" fill="#F1F5F9" />
+    <!-- Book Icon -->
+    <path d="M20 22C22 21 24 21 25 23C26 21 28 21 30 22V34C28 33 26 33 25 35C24 33 22 33 20 34V22Z" stroke="#475569" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+    <circle cx="288" cy="24" r="8" fill="none" stroke="#CBD5E1" stroke-width="1" />
+    <rect x="16" y="64" width="66" height="18" rx="4" fill="#F1F5F9" />
+    <text x="22" y="76" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9.5" font-weight="600" fill="#64748B" letter-spacing="0.3">EDUCATION</text>
+    <text x="16" y="98" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13.5" font-weight="600" fill="#0F172A">Accessing quality learning materials</text>
+  </g>
+
+  <!-- Card 5: Finding reliable service providers -->
+  <g transform="translate(445, 356)">
+    <rect width="310" height="114" rx="16" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1" />
+    <rect x="16" y="16" width="38" height="38" rx="10" fill="#F1F5F9" />
+    <!-- Users Icon -->
+    <circle cx="25" cy="24" r="3.5" stroke="#475569" stroke-width="1.5" fill="none" />
+    <path d="M19 34C19 31.5 21.5 30 25 30C28.5 30 31 31.5 31 34" stroke="#475569" stroke-width="1.5" stroke-linecap="round" fill="none" />
+    <circle cx="288" cy="24" r="8" fill="none" stroke="#CBD5E1" stroke-width="1" />
+    <rect x="16" y="64" width="86" height="18" rx="4" fill="#F1F5F9" />
+    <text x="22" y="76" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="9.5" font-weight="600" fill="#64748B" letter-spacing="0.3">LOCAL SERVICES</text>
+    <text x="16" y="98" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13.5" font-weight="600" fill="#0F172A">Finding reliable service providers</text>
+  </g>
+
+  <!-- Custom Problem Input Preview Box -->
+  <g transform="translate(790, 356)">
+    <rect width="310" height="114" rx="16" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1" />
+    <text x="16" y="32" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12.5" font-weight="700" fill="#0F172A">Or describe your own problem</text>
+    <rect x="16" y="44" width="278" height="54" rx="8" fill="#F8FAFC" stroke="#E2E8F0" stroke-width="1" />
+    <text x="26" y="70" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11.5" font-weight="400" fill="#94A3B8">Tell us about a problem you'd like to solve...</text>
+  </g>
+
+  <!-- Bottom Action Bar -->
+  <g transform="translate(100, 520)">
+    <line x1="0" y1="0" x2="1000" y2="0" stroke="#E2E8F0" stroke-width="1" />
+    <!-- Ready status -->
+    <circle cx="10" cy="30" r="4" fill="#10B981" />
+    <text x="22" y="34" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12.5" font-weight="500" fill="#334155">
+      Ready to continue with your selected problem
+    </text>
+
+    <!-- Continue Button -->
+    <rect x="880" y="10" width="120" height="40" rx="10" fill="#4F46E5" />
+    <text x="922" y="34" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600" fill="#FFFFFF">Continue →</text>
   </g>
 </svg>
