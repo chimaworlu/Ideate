@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <defs>
+    <linearGradient id="ideate-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4F46E5" />
+      <stop offset="100%" stop-color="#7C3AED" />
+    </linearGradient>
+  </defs>
+  <!-- Background squircle -->
+  <rect width="64" height="64" rx="16" fill="url(#ideate-grad)" />
+  <!-- Sparkles / Spark icon -->
+  <path d="M32 15L34.5 27.5L47 30L34.5 32.5L32 45L29.5 32.5L17 30L29.5 27.5L32 15Z" fill="#FFFFFF" />
+  <path d="M46 13L47.2 18.8L53 20L47.2 21.2L46 27L44.8 21.2L39 20L44.8 18.8L46 13Z" fill="#E0E7FF" opacity="0.9" />
+  <path d="M20 41L21 45.5L25.5 46.5L21 47.5L20 52L19 47.5L14.5 46.5L19 45.5L20 41Z" fill="#E0E7FF" opacity="0.8" />
+</svg>
